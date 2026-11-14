@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3rxanvkj0f3l"]
+
+[ext_resource type="Script" uid="uid://d1uj7dmhd6sjs" path="res://Scripts/asteroid.gd" id="1_d2wdv"]
+[ext_resource type="Texture2D" uid="uid://dmt1k51bcyccb" path="res://Assets/CelestialObjects.png" id="2_ybrt5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2wdv"]
+atlas = ExtResource("2_ybrt5")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 16.0
+
+[node name="Asteroid" type="CharacterBody2D" unique_id=558508498]
+script = ExtResource("1_d2wdv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1188325882]
+texture = SubResource("AtlasTexture_d2wdv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1549344522]
+shape = SubResource("CircleShape2D_g4v7s")

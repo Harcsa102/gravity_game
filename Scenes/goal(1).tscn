@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bse26v3ugoyyr"]
+
+[ext_resource type="Texture2D" uid="uid://dmt1k51bcyccb" path="res://Assets/CelestialObjects.png" id="1_paeek"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4v7s"]
+atlas = ExtResource("1_paeek")
+region = Rect2(256, 0, 128, 95)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_57qmd"]
+radius = 55.00909
+
+[node name="Goal" type="Area2D" unique_id=879425501]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=973880182]
+texture = SubResource("AtlasTexture_g4v7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=635439664]
+shape = SubResource("CircleShape2D_57qmd")
