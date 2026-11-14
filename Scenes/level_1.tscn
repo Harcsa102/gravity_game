@@ -167,7 +167,7 @@ gravity_radius = 100.0
 gravity_strength = 30.0
 
 [node name="Goal" parent="." unique_id=1776181934 instance=ExtResource("6_evi0p")]
-position = Vector2(455, 460)
+position = Vector2(585, 212)
 collision_layer = 8
 goal_radius = 64.0
 
